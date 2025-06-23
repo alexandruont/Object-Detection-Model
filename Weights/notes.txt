@@ -1,0 +1,8 @@
+
+700E Validating results:
+    Validating runs/detect/train2/weights/best.pt...
+    Ultralytics 8.3.133 🚀 Python-3.11.12 torch-2.6.0+cu124 CUDA:0 (Tesla T4, 15095MiB)
+    Model summary (fused): 72 layers, 3,005,843 parameters, 0 gradients, 8.1 GFLOPs
+                    Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100% 5/5 [00:02<00:00,  1.81it/s]
+                    all        136        201      0.971      0.851      0.933      0.681
+    Speed: 0.2ms preprocess, 2.6ms inference, 0.0ms loss, 5.6ms postprocess per image

@@ -1,16 +1,18 @@
 import cv2
 from ultralytics import YOLO
 
-model = YOLO("Weights/Best/best500E.pt")
+model = YOLO("Object-Detection-Model/Weights/Best/best700E.pt")
 
-input_video = "vid2.mov"
-cap = cv2.VideoCapture(input_video)
+# webcam sau un videoclip/imagine anume
+input_video = 1
+#input_video = "Object-Detection-Model/vid2.MOV"
+cap = cv2.VideoCapture(input_video) 
 
 fps = cap.get(cv2.CAP_PROP_FPS)
 width = int(cap.get(cv2.CAP_PROP_FRAME_WIDTH))
 height = int(cap.get(cv2.CAP_PROP_FRAME_HEIGHT))
 
-output_video = 'output1.mp4'
+output_video = 'output3.mp4'
 fourcc = cv2.VideoWriter_fourcc(*'mp4v')
 out = cv2.VideoWriter(output_video, fourcc, fps, (width, height))
 
