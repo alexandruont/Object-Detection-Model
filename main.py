@@ -1,11 +1,11 @@
 import cv2
-from ultralytics import YOLO
+from ultralytics import YOLO #de instalat cu pip cv2 si ultralytics
 
 model = YOLO("Object-Detection-Model/Weights/Best/best700E.pt")
 
 # webcam sau un videoclip/imagine anume
 input_video = 1
-#input_video = "Object-Detection-Model/vid2.MOV"
+#input_video = "Object-Detection-Model/Weights/vid2.MOV"
 cap = cv2.VideoCapture(input_video) 
 
 fps = cap.get(cv2.CAP_PROP_FPS)
